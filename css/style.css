@@ -1,0 +1,1097 @@
+
+ /* Estilos para todas las páginas por igual */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+    overflow-x: hidden;
+}
+h2{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 3px deeppink, 2px 2px 3px deeppink;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 20px 20px 20px 20px;
+}
+h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px; 
+    text-shadow: 2px 2px 3px rgb(255, 143, 231), 2px 2px 3px rgb(255, 143, 231);
+}
+h4{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px; 
+    text-shadow: 2px 2px 3px rgb(255, 143, 231), 2px 2px 3px rgb(255, 143, 231);
+}
+section{
+    flex: 2;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 10px 0px;
+}
+/* ------------------------------------------------------------------------------- */
+/* Empieza Header */
+.cabecera{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 100%;
+    background: url(../img/Amá\ tu\ piel.png) no-repeat;
+    background-size: cover;
+    height: 40vh;
+    min-height: 300px;
+    
+}
+.amatupiel{
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    padding: 60px ;
+    background: rgba(255, 112, 219, 0.459); 
+    border-radius: 33px 33px 33px 33px;
+    
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'MonteCarlo', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px 2px #ffffff, 2px 2px 2px #ffffff;
+
+}
+.texto{
+    text-align: right;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+
+}
+/* Termina el Header */
+
+/* Empieza el nav */
+.barra{
+    margin: 0;
+    width: 100%;
+    font-family:'Montserrat', sans-serif;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+#btn-menu{
+    display: none;
+}
+
+.barra label{
+    display:none;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    float: right;
+}
+
+.menu{
+    margin:0;
+    list-style: none;
+    padding:0;
+    display:flex;
+}
+.menu li a{
+    display: inline-block;
+    padding: 10px 5px;
+    margin-right: 15px;
+    color: darkmagenta;
+    text-decoration: none;
+    text-align: center;
+}
+.menu li:hover {
+    background: rgba(255, 150, 232, 0.623);
+}
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+}
+.menu i{
+    color: #ff9a9e;
+    padding: 0;    
+    margin-left: 10px;
+}
+
+nav .nav__responsive-logo{
+    display: none;
+    width: 100%;
+}
+.nav__responsive-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100% ;
+}
+
+/* Termina nav */
+
+
+/* Empieza el footer */
+footer{
+    display: flex;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    height: 4rem;
+    justify-content: center;
+}
+
+#text-center{
+    align-self: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 1px 1px 2px black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+/* Termina el footer */
+
+/* Empieza página "Inicio" */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section .novedades{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ebbba7;
+    
+}
+.inicio img{
+    padding: 10px;
+    width: 550px;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+aside{
+    width: 600px;
+    height: 100%;
+    padding: 0px;
+    margin: 10px;
+    flex: 1;
+}
+/* Comienza Slider */
+.slider{
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    background-color: thistle;
+    border-radius: 13px;
+}
+.slider h3{
+    text-align: center;
+    font-size: large;
+}
+.slider ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+
+    animation: cambio 20s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+/* Termina Slider */
+
+.ig{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    background: lightpink;
+    border-radius: 3%;
+    width: 95%;
+    box-sizing: border-box;
+}
+.i-ig{
+    align-self: center;
+}
+
+
+/* Página "Sobre Ama tu Piel" */
+.sobreatp{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    border-radius: 13px 13px 13px 13px;
+}
+.parrafo-atp{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5;
+    font-size: 18px; 
+    color: darkmagenta;
+    
+}
+.certificados > img{
+    width: 300px;
+    height: 250px;
+    padding: 10px 20px;
+    height: auto;
+}
+
+.certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    border-radius: 13px 13px 13px 13px;
+}
+/* Termina "Sobre Ama tu Piel" */
+
+/* Página "Tratamientos" */
+.introduccion-trat{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px; 
+    padding: 10px;
+    color: darkmagenta;
+}
+.info-trat{
+    list-style: none;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5;
+    font-size: 18px; 
+    color: darkmagenta;
+}
+.img-trat{
+    width: 400px;
+    height: 300px;
+    padding: 0px 20px;
+    height: auto;
+    border-radius: 90%;
+}
+.tratamientos >div{
+    display: flex;
+    padding: 10px;
+    
+}
+.peelingsbeneficios li{
+    flex-direction: column;
+    list-style: none;
+    align-content: center;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+.drenaje{
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 13px 13px 13px 13px;
+
+}
+.microdermoabrasion{
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.peeling{
+    justify-content: flex-start;
+    padding:  10px;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 13px 13px 13px 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.peelingsbeneficios{
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.altafrecuencia{
+    flex-direction: row-reverse;
+    padding:  10px;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 13px 13px 13px 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.radiofrecuencia{
+    justify-content: flex-start;
+    padding:  10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.luzled{
+    flex-direction:row-reverse;
+    padding: 10px;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 13px 13px 13px 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.lucesled li{
+    flex-direction: column;
+    padding: 0px 0px 0px 10px ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dermapen{
+    justify-content: flex-start;
+    padding:  10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    border-radius: 13px 13px 13px 13px;
+
+}
+.dermaplaning{
+    flex-direction:row-reverse;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+/* Termina "Tratamientos" */
+
+/* Empieza página "Contacto" */
+
+.contacto{
+    background-image: url(../img/spa.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 10px;
+}
+form{
+    width: 450px;
+    margin:auto;
+    background: rgba(255, 112, 219, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    
+}
+.contact-atp{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-family: monospace;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    background: none;
+}
+.form-parrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    background: #ff9a9e;
+    color: #fff;
+    padding: 20px
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+/* Termina Contacto */
+
+
+/* Empieza media queries */
+@media only screen and (max-width: 900px){
+
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    section{
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 20px 0px;
+    }
+    h2{
+        
+        font-size: 50px;
+        text-align: center;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    h4{  
+        text-align: center;  
+        font-size: 18px;
+    }
+    /* Encabezado */
+    .cabecera{
+        display: flex;
+        width: 100%;
+        height: 30vh;
+        min-height: 200px;  
+     }
+     .amatupiel{
+         display: flex;
+         padding: 0;
+         width: 100%; 
+         justify-content: center;
+    }
+    
+    .titulo{    
+            font-size: 3.5em;
+    
+     } 
+     .texto{
+        display: flex;
+        align-content: flex-end;
+        flex-direction: column-reverse;
+        padding: 10px;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        max-height: 150px;
+        font-size: 0.5em;
+        font-weight: bold;
+    }
+    #text-center{
+        align-self: center;
+        text-align: center;
+    }
+    
+    /* Nav */
+    .menu li a{
+        padding: 10px 3px;
+        margin-right: 10px;
+    }
+       
+     .nav li{
+         font-size: smaller;
+     }
+     .nav a{
+         font-size: small;
+     }
+    
+     /* Termina Nav */
+
+   
+
+    /* Página Inicio */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    section .novedades{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: #ebbba7;
+        
+    }
+    .inicio img{
+        padding: 10px;
+        width: 500px;
+        object-fit: cover;
+        border-radius: 20px 20px 20px 20px;
+        
+    }
+    
+    
+    aside{
+        width: 600px;
+        height: 100%;
+        padding: 0px;
+        margin: 10px;
+    }
+    /* Comienza Slider */
+    .slider{
+        align-items: center;
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        overflow: hidden;
+        background-color: thistle;
+        border-radius: 13px;
+    }
+
+    .slider li{
+        width: 90%;
+        list-style: none;
+    }
+    .slider img{
+        display:block;
+        margin:auto;
+        width: 80%;
+        height: 80%;
+    }
+    
+    /* Página Tratamientos */
+    .img-trat{
+        display: flex;
+        align-self: center;
+        order:2;
+        padding: 10px 0px;
+        justify-content: center;
+        object-fit: cover;
+    }
+    .introduccion-trat{
+        font-size: 16px;
+    }
+    .tratamientos >div{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+   
+    .microdermoabrasion, .altafrecuencia, .luzled, .dermapen, .dermaplaning{
+        flex-direction: column-reverse;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .peelingsbeneficios{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding:10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* Página Sobre Ama tu Piel */
+    .certificados img{
+        width: 300px;
+        height: 250px;
+        display: flex;
+        align-self: center;
+        order:2;
+        padding: 10px 10px;
+        justify-content: center;
+    }
+    .parrafo-atp{
+        font-size: 16px;
+        text-align: center;
+    }
+    .certificados{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .sobreatp{
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    
+    }
+
+   
+}
+
+@media only screen and (max-width: 500px){
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    section{
+        flex: 2;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 20px 0px;
+    }
+
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    h4{ 
+        font-size: 18px;
+    }
+    /* Cabecera responsive */
+    .cabecera{
+        display: none;
+    }
+    /* Nav responsive */
+    
+    .barra label{
+        display: block;
+        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    }
+    .menu{
+        position: absolute;
+        background: #fdcbf1;
+        width: 100%;
+        margin-top: -100% ;
+        transition: all 0.5s;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    
+    label img{
+        width: 40px;
+        height: 40px;
+        align-content: center;
+        margin-top: -5px;
+    }
+    
+    .menu li{
+        border-top: 1px solid #fff;
+        justify-content: center;
+    }
+    .nav label:hover{
+        cursor: pointer;
+        background: rgba(255, 153, 216, 0.787);
+        border-bottom-left-radius: 1px solid #fff;
+    }
+    nav .nav__responsive-logo{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+    .menu a{
+        justify-content: center;
+        font-size: x-small;
+    }
+    #btn-menu:checked ~ .menu {
+        margin-top: 0;
+        
+    }
+
+    
+    
+    
+    /* Encabezado */
+
+    #text-center{
+        align-self: center;
+        text-align: center;
+    }
+
+    /* Página Inicio */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+        
+    section .novedades{
+        display: flex;
+        width: auto;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 300px;
+        color: #ebbba7;
+            
+    }
+    .inicio img{
+        padding: 10px 0px;
+        width: 350px;
+        object-fit: cover;
+        border-radius: 20px 20px 20px 20px;
+            
+    }
+        
+    aside{
+        width: auto;
+        height: 100%;
+        padding: 0px;
+        margin: 10px;
+        flex: 1;
+    }
+    /* Comienza Slider */
+    .slider{
+        padding: 10px;
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+        background-color: thistle;
+        border-radius: 13px;
+    }
+    .slider h3{
+        text-align: center;
+        font-size: medium;
+    }
+    .slider ul{
+        display: flex;
+        justify-items: center;
+        width: 400%;
+        padding: 0;
+    }
+    .slider li{
+        align-self: center;
+        width: 100%;
+        list-style: none;
+    }
+    .slider img{
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 80%;
+       
+    }
+    /* Página Tratamientos */
+  
+    .img-trat{
+        width: 300px;
+        display: flex;
+        align-self: center;
+        order:2;
+        padding: 10px 0px;
+        justify-content: center;
+    }
+
+    .info-trat{
+        font-size: 12px;
+        text-align: center;
+       
+    }
+
+    .introduccion-trat{
+        font-size: 14px;
+    }
+    .tratamientos >div{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .drenaje, .microdermoabrasion, .peeling, .altafrecuencia, .radiofrecuencia, .luzled, .dermapen, .dermaplaning{
+        flex-direction: column-reverse;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    ul .info-trat{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .peelingsbeneficios{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding:10px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    
+    /* Página Sobre Ama tu Piel */
+    .certificados img{
+        width: 300px;
+        display: flex;
+        align-self: center;
+        order:2;
+        padding: 10px 0px;
+        justify-content: center;
+    }
+    .parrafo-atp{
+        font-size: 14px;
+        text-align: center;
+    }
+    .certificados{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .sobreatp{
+        padding: 0px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    /* Contacto */
+    form{
+        width: 100%;
+    }
+    
+
+}
+@media only screen and (max-width: 340px){
+    *{
+        margin: 0;
+        padding:0 ;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    section{
+        flex: 2;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 20px 0px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    h4{  
+        font-size: 15px;
+    }
+    /* Cabecera responsive */
+    .cabecera{
+        display: none;
+    }
+    /* Encabezado */
+
+    #text-center{
+        align-self: center;
+        text-align: center;
+    }
+
+    /* Nav */
+    .menu li{
+        padding: 10px;
+        font-size: xx-small;
+    }
+
+    .menu li a{
+        display: inline;
+        margin-right: 2px ;
+        font-size: xx-small;
+    }
+    nav .nav__responsive-logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    label img{
+        align-content: center;
+    }
+
+    .nav__responsive-logo img{
+        width: 45px;
+        height: 45px;
+        padding: 5px;
+        margin-top: 2px;
+    }
+    /* Página Inicio */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+        
+    section .novedades{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: #ebbba7;
+            
+    }
+    .inicio img{
+        padding: 5px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 20px 20px 20px 20px;
+            
+    }
+        
+    aside{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    /* Comienza Slider */
+    .testimonios{
+        text-align: center;
+        padding: 0%;   
+    }
+        
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        background-color: #e6dee9;
+        width: 300px;
+        height: 250px;
+        padding: 5px;
+        border-radius: 25%;
+    }
+    .slider{
+        position: relative;
+        width: 300px;
+        height: 200px;
+        padding: 5px;
+    }
+    .slider img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+    }
+    
+    .menu a{
+        font-size: 15px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        align-self: center;
+        padding: 5px;
+
+    }
+    .ig{
+        width: 300px;
+        height: 400px;
+        margin:auto;
+    }
+   
+    /* Página Tratamientos */
+    .img-trat{
+        width: 250px;
+        display: flex;
+        align-self: center;
+        order:2;
+        padding: 10px 0px;
+        justify-content: center;
+    }
+
+    .introduccion-trat{
+        font-size: 12px;
+    }
+    .info-trat{
+        font-size: 10px;
+    }
+    .tratamientos >div{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+   
+    .drenaje, .microdermoabrasion, .peeling, .radiofrecuencia, .altafrecuencia, .luzled, .dermapen, .dermaplaning{
+        flex-direction: column-reverse;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    ul .info-trat{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .peelingsbeneficios{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        padding:10px;
+    }
+    
+    /* Página Sobre Ama tu Piel */
+    .certificados{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .certificados img{
+        width: 250px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:10px;
+    }
+    .certificados{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .parrafo-atp{
+        font-size: 10px;
+        text-align: center;
+    }
+   .sobreatp{
+       padding: 0px;
+   }
+       
+}
