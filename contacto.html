@@ -49,22 +49,17 @@
     </div>
 
     <section class="contacto">
-        <form action="" id="formulario" class="animate__animated animate__fadeInDown">
+        <form action="" id="formulario" class="animate__animated animate__fadeInDown" method="post" onsubmit="return validarFormulario();">
             <h2 class="contact-atp">CONTACTO</h2>
             <p class="form-parrafo">Por consultas o turnos, podes completar el siguiente formulario. A la
                 brevedad me
                 estaré comunicando contigo.</p>
-            <label for="nombre-y-apellido"></label>
             <input type="text" class="form-control" id="nombre-y-apellido" placeholder="Nombre y Apellido">
-            <label for="email"></label>
             <input type="email" class="form-control" id="email" placeholder="Correo: ejemplo@email.com">
-            <label for="tel"></label>
             <input type="text" class="form-control" id="tel" placeholder="Teléfono">
             <textarea id="consulta" name="texto" rows="5" cols="30" placeholder="Escribe tu consulta"></textarea>
-            <input type="submit" onclick = 'return validarFormulario();' value="Enviar" id="boton">
+            <input type="submit" value="Enviar" class="btn-enviar" id="boton">
         </form>
-        <div id='error'></div>
-        <div id='correcto'></div>
 
     </section>
 

@@ -1,42 +1,36 @@
-// let nombre = document.getElementById('nombre-y-apellido');
-// let correo = document.getElementById('email');
-// let tel = document.getElementById('tel');
-// let consulta = document.getElementById('consulta');
-// let error = document.getElementById('error');
-// let correcto = document.getElementById('correcto');
 
-// error.style.color ='red'
+ var nombre = document.getElementById('nombre-y-apellido');
+ var correo = document.getElementById('email');
+ var tel = document.getElementById('tel');
+ var consulta = document.getElementById('consulta');
+ 
 
-// function validarFormulario(){
+function validarFormulario(){
 
-//     let mensajeError = [];
+    if(nombre.value===""){
+        alert("Ingrese su Nombre y Apellido.");
+        return false;
+    }
+    else if (correo.value===""){
+        alert("Ingrese su dirección de correo electrónico.");
+        return false;
+    }
 
-//     if(nombre.value === null || nombre.value === ''){
-//         mensajeError.push('Ingresa tu nombre');
-//     }
-
-//     if(correo.value === null || correo.value === ''){
-//         mensajeError.push('Ingresa tu e-mail');
-//     }
-
-//     if(tel.value === null || tel.value === ''){
-//         mensajeError.push('Ingresa tu número telefónico');
-//     }
-
-//     if (isNaN(parseInt(formulario.tel.value))){
-//         mensajeError.push('El campo telefónico sólo acepta valores numéricos');
-//     }
-
-//     if(consulta.value === null || consulta.value === ''){
-//         mensajeError.push('Ingresa tu consulta');
-//     }
+    else if(tel.value===""){
+        alert("Ingrese su número de contacto.");
+        return false;
+    }
+    else if(isNaN(parseInt(formulario.tel.value))){
+        alert("El campo telefónico sólo acepta valores numéricos.");
+        return false;
+    }
+    else if(consulta.value===""){
+        alert("Indique su consulta.");
+        return false;
+    }
+    else{
+        alert("Su consulta ha sido enviada. ¡Muchas gracias!")
+        return true;
+    }
     
-//         error.innerHTML = mensajeError.join(', ');
-//     return false;
-    
-
-// }
-
-
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
+}
