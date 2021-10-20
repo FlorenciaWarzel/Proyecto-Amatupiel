@@ -29,8 +29,8 @@ function validarFormulario(){
         return false;
     }
     else{
-        alert("Su consulta ha sido enviada. ¡Muchas gracias!")  
+        alert("Su consulta ha sido enviada. ¡Muchas gracias!") 
     }
-    this.submit();
+
     
 }
