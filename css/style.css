@@ -662,7 +662,6 @@ textarea{
 
 @media only screen and (max-width: 500px){
     *{  
-        z-index: 1;
         margin: 0;
         padding:0;
         box-sizing: border-box;
@@ -693,7 +692,9 @@ textarea{
         display: none;
     }
     /* Nav responsive */
-    
+    .barra{
+        z-index: 1;
+    }
     .barra label{
         display: block;
         background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
