@@ -28,10 +28,8 @@ function validarFormulario(){
         alert("Indique su consulta.");
         return false;
     }
-    else{
-        alert("Su consulta ha sido enviada. ¡Muchas gracias!") 
-        return;
-    }
+   
+    alert("Su consulta ha sido enviada. ¡Muchas gracias!")
 
     
 }
