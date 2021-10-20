@@ -30,6 +30,7 @@ function validarFormulario(){
     }
     else{
         alert("Su consulta ha sido enviada. ¡Muchas gracias!") 
+        return;
     }
 
     
