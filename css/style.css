@@ -661,7 +661,7 @@ textarea{
 }
 
 @media only screen and (max-width: 500px){
-    *{  z-index: 1000;
+    *{ 
         margin: 0;
         padding:0;
         box-sizing: border-box;
@@ -706,6 +706,7 @@ textarea{
         transition: all 0.5s;
         flex-direction: column;
         justify-content: center;
+        z-index: 1000;
        
     }
     
