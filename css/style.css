@@ -661,7 +661,8 @@ textarea{
 }
 
 @media only screen and (max-width: 500px){
-    *{
+    *{  
+        z-index: 1;
         margin: 0;
         padding:0;
         box-sizing: border-box;
@@ -698,6 +699,7 @@ textarea{
         background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     }
     .menu{
+        display: block;
         position: absolute;
         background: #fdcbf1;
         width: 100%;
@@ -721,7 +723,7 @@ textarea{
     }
     .nav label:hover{
         cursor: pointer;
-        background: rgba(255, 153, 216, 0.787);
+        background: rgba(255, 164, 220, 0.787);
         border-bottom-left-radius: 1px solid #fff;
     }
     nav .nav__responsive-logo{
